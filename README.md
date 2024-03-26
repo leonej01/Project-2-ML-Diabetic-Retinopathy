@@ -15,8 +15,7 @@ DoraMaria Abreu
 
 ### 04.4.24
 
-Objective
-
+Objective: Train an algorithim to predict whether an image contains signs of diabetic retinopathy or not.
 
 
 ### An executive summary or overview of the project and project goals (5 points).
@@ -25,6 +24,8 @@ Objective
 
 ### An overview of the data collection, cleanup, and exploration processes. Include a description of how you evaluated the trained model(s) using testing data. (5 points)
 
+Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P.
+This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
 ### Data Dictionary
 

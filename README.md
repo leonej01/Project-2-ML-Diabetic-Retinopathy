@@ -47,6 +47,7 @@ Objective
 ### Additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
 
 ### Link for project on GitHub
+https://github.com/leonej01/Project-2-ML-Diabetic-Retinopathy.git
 
 
 ### Further Analysis

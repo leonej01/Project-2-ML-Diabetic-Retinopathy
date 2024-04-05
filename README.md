@@ -105,7 +105,7 @@ Clinical Integration: Developing a pilot program for clinical validation and int
 Explainability and Fairness: Implementing model explainability tools to interpret predictions and assess model fairness can ensure ethical application and trust among end-users.
 
 
-### Additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
+### Additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development.
 
 ### Link for project on GitHub
 https://github.com/leonej01/Project-2-ML-Diabetic-Retinopathy.git

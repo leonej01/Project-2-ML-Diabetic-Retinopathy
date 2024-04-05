@@ -4,7 +4,6 @@
 
 ### Columbia School of Engineering AI Boot Camp
 
-
 ### FANTASTIC 4
 (Team 4): 
 Jennifer Leone, 
@@ -16,7 +15,6 @@ DoraMaria Abreu
 ### 04.4.24
 
 Objective: Train an algorithim to predict whether an image contains signs of diabetic retinopathy or not.
-
 
 ### An executive summary or overview of the project and project goals (5 points).
 
@@ -30,49 +28,55 @@ The insights gained from this exhaustive analysis will enable the development of
 
 The Messidor project aims not only to develop accurate DR detection models but also to compare and evaluate different segmentation and indexing techniques in retinal ophthalmology. This comprehensive approach will contribute to advancing the field of automated eye disease diagnosis and ultimately enhance the efficiency and effectiveness of DR screening programs.
 
-
-
-### An overview of the data collection, cleanup, and exploration processes. Include a description of how you evaluated the trained model(s) using testing data. (5 points)
+### An overview of the data collection, cleanup, and exploration processes. 
 
 Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P.
 This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+Format: csv file
 
-### Data Dictionary
-
-
-### Preprocessing
-
-Logistic Regression, LogisticRegression()
-Support Vector Machine, SVC()
-K-Nearest Neighbors, KNeighborsClassifier()
-Decision Tree", DecisionTreeClassifier()
-Random Forest", RandomForestClassifier()
-Extremely Random Trees, ExtraTreesClassifier()
-Gradient Boosting, GradientBoostingClassifier()
-AdaBoost, AdaBoostClassifier()
-Naive Bayes, GaussianNB()
-
+### Features
+19 Total Features  
+All features represent either a detected lesion, a descriptive feature of a anatomical part or an image-level descriptor. 
+                            
+- 0 :   Image Quality: 0 = Bad, 1 = Sufficient.
+- 1 :   Pre-screening: 0 = No severe abnormality, 1 = Severe abnormality. 
+- 2-7:  Microaneurysms (MA) detection at confidence levels 0.5 to 1
+- 8-15: Exudates detection, normalized by ROI diameter.
+- 16:   Euclidean distance between macula center and optic disc, normalized.
+- 17:   Optic disc diameter.
+- 18:   The binary result of the AM/FM-based classification. 
+- 19:   Class label. 1 = contains signs of DR (Accumulative label for the Messidor classes 1, 2, 3), 0 = no signs of DR.
 
 ### Data Exploration
 
-Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P. This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-Format: csv file
-Contents: 1152 entries, 20 columns including retina image quality, prescreening, evaluating and accuracy. 
-Data Clean-up: None needed. dtypes: float64(10), int64(10). no string objects present to encode. StandardScalar() used after splitting data into train, test. 
-Exploration:  Target is balanced: 
-Class 1 (DR): 611 
-Class 0 (No DR): 540
-Main Starter File and which calls the other file Model Utilities
+Format: csv file  
+Contents: 1152 entries, 20 columns including retina image quality, prescreening, evaluating and accuracy.  
+Data Clean-up: None needed. dtypes: float64(10), int64(10). No string objects present to encode. StandardScalar() used after splitting data into train & test.  
+Target is balanced:   
+- Class 1 (DR): 611 
+- Class 0 (No DR): 540
+Main Starter File and which calls the other file Model Utilities  
+
+### Models Trained and Tested
+
+* Logistic Regression, LogisticRegression()
+* Support Vector Machine, SVC()
+* K-Nearest Neighbors, KNeighborsClassifier()
+* Decision Tree", DecisionTreeClassifier()
+* Random Forest", RandomForestClassifier()
+* Extremely Random Trees, ExtraTreesClassifier()
+* Gradient Boosting, GradientBoostingClassifier()
+* AdaBoost, AdaBoostClassifier()
+* Naive Bayes, GaussianNB()  
 
 
-### The approach that your group took in achieving the project goals (5 points).
+### The approach that your group took in achieving the project goals.
 
-Collaborative planning and role assignment
-Research and methodological selection
-Iterative development and regular reviews
-Data driven decision making
-Evaluation and Interpretation
-
+- Collaborative planning and role assignment
+- Research and methodological selection
+- Iterative development and regular reviews
+- Data driven decision making
+- Evaluation and Interpretation
 
 
 ### The results/conclusions of the application or analysis:
@@ -99,8 +103,6 @@ Broader Social Impact
 Longitudinal Data: Incorporating longitudinal patient data could enable the development of models that predict DR progression over time, offering a dynamic tool for patient monitoring.
 Clinical Integration: Developing a pilot program for clinical validation and integration, involving feedback from healthcare professionals, can ensure the model's practical utility and acceptance.
 Explainability and Fairness: Implementing model explainability tools to interpret predictions and assess model fairness can ensure ethical application and trust among end-users.
-
-
 
 
 ### Additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).

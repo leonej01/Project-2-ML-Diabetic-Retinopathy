@@ -32,7 +32,7 @@ The Messidor project aims not only to develop accurate DR detection models but a
 
 Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P.
 This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-Format: csv file
+
 
 ### Features
 19 Total Features  

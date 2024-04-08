@@ -6,16 +6,24 @@
 
 
 ### FANTASTIC 4
-(Team 4): 
-Jennifer Leone, 
-James O’Brien, 
-Osita Igwe, 
-Giancarlo Ocasio, 
-DoraMaria Abreu
+
+<ul>(Team 4): 
+  
+<li>Jennifer Leone</li> 
+<li>James O’Brien</li> 
+<li>Osita Igwe</li> 
+<li>Giancarlo Ocasio</li> 
+<li>DoraMaria Abreu</li>
+</ul>
+
+
 
 ### 04.4.24
 
-Objective: Train an algorithim to predict whether an image contains signs of diabetic retinopathy or not.
+
+
+### Objective:
+Train an algorithim to predict whether an image contains signs of diabetic retinopathy or not.
 
 
 ### An executive summary or overview of the project and project goals (5 points).
@@ -32,37 +40,51 @@ The Messidor project aims not only to develop accurate DR detection models but a
 
 
 
-### An overview of the data collection, cleanup, and exploration processes. Include a description of how you evaluated the trained model(s) using testing data. (5 points)
+### An overview of the data collection, cleanup, and exploration processes. 
+(Include a description of how you evaluated the trained model(s) using testing data.) (5 points)
 
-Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P.
+### Data Source: 
+Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P.
 This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
-### Data Dictionary
+Thankfully the dataset was cleaner than expected and the team didn't need to clean it further.
 
 
 ### Preprocessing
-
-Logistic Regression, LogisticRegression()
-Support Vector Machine, SVC()
-K-Nearest Neighbors, KNeighborsClassifier()
-Decision Tree", DecisionTreeClassifier()
-Random Forest", RandomForestClassifier()
-Extremely Random Trees, ExtraTreesClassifier()
-Gradient Boosting, GradientBoostingClassifier()
-AdaBoost, AdaBoostClassifier()
-Naive Bayes, GaussianNB()
+<ul>
+<li>Logistic Regression, LogisticRegression()</li>
+<li>Support Vector Machine, SVC()</li>
+<li>K-Nearest Neighbors, KNeighborsClassifier()</li>
+<li>Decision Tree", DecisionTreeClassifier()</li>
+<li>Random Forest", RandomForestClassifier()</li>
+<li>Extremely Random Trees, ExtraTreesClassifier()</li>
+<li>Gradient Boosting, GradientBoostingClassifier()</li>
+<li>AdaBoost, AdaBoostClassifier()</li>
+<li>Naive Bayes, GaussianNB()</li>
+</ul>
 
 
 ### Data Exploration
 
-Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. https://doi.org/10.24432/C5XP4P. This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+Data Source: Antal,Balint and Hajdu,Andras. (2014). Diabetic Retinopathy Debrecen. UCI Machine Learning Repository. 
+https://doi.org/10.24432/C5XP4P. 
+
+This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
 Format: csv file
+
 Contents: 1152 entries, 20 columns including retina image quality, prescreening, evaluating and accuracy. 
+
 Data Clean-up: None needed. dtypes: float64(10), int64(10). no string objects present to encode. StandardScalar() used after splitting data into train, test. 
+
 Exploration:  Target is balanced: 
+
 Class 1 (DR): 611 
+
 Class 0 (No DR): 540
+
 Main Starter File and which calls the other file Model Utilities
+
 
 
 ### The approach that your group took in achieving the project goals (5 points).
@@ -74,39 +96,88 @@ Data driven decision making
 Evaluation and Interpretation
 
 
-
 ### The results/conclusions of the application or analysis:
+
+Data-Driven Results
+Accuracy was not perfect
+
+Building Machine & Deep Learning Models
+Equip Doctors with better screening DR.
+Build awareness of DR.
+
 
 
 ### Conclusion:
 
-
-Importance of the Project
-Early Detection: Early detection of Diabetic Retinopathy can significantly reduce the risk of severe vision loss. Machine learning models can assist in screening processes, making them more efficient and potentially more accurate than traditional methods.
-Scalability: Automated DR detection systems can scale to screen large populations, especially in resource-constrained environments where access to an ophthalmologists is limited.
-Clinical Decision Support: The project enhances clinical decision-making by providing a tool that aids in the prioritization of cases for review and intervention based on the risk of DR.
-Research Insights: Analysis of feature importance and model performance offers insights into the pathophysiology of DR, potentially guiding future research into its underlying mechanisms and treatments.
+### Importance of the Project
 
 
-Evolution in the Next Iteration
+### Early Detection: 
+Early detection of Diabetic Retinopathy can significantly reduce the risk of severe vision loss. Machine learning models can assist in screening processes, making them more efficient and potentially more accurate than traditional methods.
+
+
+### Scalability: 
+Automated DR detection systems can scale to screen large populations, especially in resource-constrained environments where access to an ophthalmologists is limited.
+
+
+### Clinical Decision Support: 
+The project enhances clinical decision-making by providing a tool that aids in the prioritization of cases for review and intervention based on the risk of DR.
+
+
+### Research Insights: 
+Analysis of feature importance and model performance offers insights into the pathophysiology of DR, potentially guiding future research into its underlying mechanisms and treatments.
+
+
+### Evolution in the Next Iteration
 The project sets a foundation for leveraging advanced analytics in ophthalmology, with a clear path for iterative enhancements that can lead to more robust, clinically applicable models for Diabetic Retinopathy detection
-Deep Learning Approaches: Integrating deep learning models, particularly convolutional neural networks (CNNs), could leverage raw fundus images directly, potentially uncovering nuanced patterns not captured by engineered features.
 
 
-Ensemble Selection: After reviewing a scientific study that used the same dataset, we surmised that the lab used a backward ensemble search method.  It starts with all possible models and iteratively removes the weakest ones. We attempted to use a similar method, using only machine learning algorithms. However, our results were no better than those that were presented earlier. During the  next iterations, a similar approach using deep learning, might be a viable selection
+### Deep Learning Approaches: 
+Integrating deep learning models, particularly convolutional neural networks (CNNs), could leverage raw fundus images directly, potentially uncovering nuanced patterns not captured by engineered features.
 
-Broader Social Impact
+
+### Ensemble Selection: 
+After reviewing a scientific study that used the same dataset, we surmised that the lab used a backward ensemble search method.  It starts with all possible models and iteratively removes the weakest ones. We attempted to use a similar method, using only machine learning algorithms. However, our results were no better than those that were presented earlier. During the  next iterations, a similar approach using deep learning, might be a viable selection
+
+
+### Broader Social Impact
 Longitudinal Data: Incorporating longitudinal patient data could enable the development of models that predict DR progression over time, offering a dynamic tool for patient monitoring.
-Clinical Integration: Developing a pilot program for clinical validation and integration, involving feedback from healthcare professionals, can ensure the model's practical utility and acceptance.
-Explainability and Fairness: Implementing model explainability tools to interpret predictions and assess model fairness can ensure ethical application and trust among end-users.
 
+
+### Clinical Integration: 
+Developing a pilot program for clinical validation and integration, involving feedback from healthcare professionals, can ensure the model's practical utility and acceptance.
+
+
+### Explainability and Fairness: 
+Implementing model explainability tools to interpret predictions and assess model fairness can ensure ethical application and trust among end-users.
 
 
 
 ### Additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
 
+If more time was available or for future development,  our group could explore the following additional questions and research directions which could significantly enhance the impact and scalability of the project which could pave the way for a comprehensive and clinically applicable system for automated eye disease detection and management.
+<ul>
+<li> Multiclass classification: Extend the binary classification problem to multiclass classification, distinguishing between different stages of DR severity (e.g., no DR, mild, moderate, severe, proliferative DR). This would provide a more granular assessment of DR progression and help prioritize treatment strategies.</li>
+
+<li> Interpretability and explainability: Develop and integrate techniques for interpreting and explaining model predictions, such as saliency maps, attention mechanisms, or rule-based explanations. This would enhance the transparency and trustworthiness of the models, facilitating their adoption in clinical settings.</li>
+
+<li> Integration with other clinical data: Investigate the integration of additional clinical data, such as patient demographics, medical history, and systemic factors (e.g., diabetes duration, HbA1c levels), to improve the predictive power and robustness of the models.</li>
+
+<li> Cost-effectiveness analysis: Conduct a comprehensive cost-effectiveness analysis to assess the economic impact of implementing automated DR detection systems in various healthcare settings, considering factors such as screening costs, treatment costs, and quality-adjusted life years (QALYs) gained.</li>
+
+<li> Human-AI collaboration: Explore the design and evaluation of human-AI collaborative workflows, where the automated DR detection system works in tandem with human experts to optimize the screening process and decision-making. This could involve developing intuitive user interfaces and studying the impact on clinical workflows and outcomes.</li>
+
+<li> Continuous model updates: Develop strategies for continuously updating and refining the models as new data becomes available, ensuring that the system adapts to evolving patient populations and captures the latest trends in DR manifestation.</li>
+
+<li> Generalizability and external validation: Assess the generalizability of the developed models by validating their performance on external datasets from diverse populations and imaging protocols. This would help establish the robustness and applicability of the models across different settings.</li>
+
+<li> Integration with other eye diseases: Expand the scope of the project to include the detection and management of other common eye diseases, such as glaucoma, age-related macular degeneration, and cataracts, leveraging the same framework and methodologies developed for DR detection.</li>
+</ul>
+
 ### Link for project on GitHub
 https://github.com/leonej01/Project-2-ML-Diabetic-Retinopathy.git
 
 
-### Further Analysis
+
+
+

@@ -26,7 +26,7 @@
 ## Objective:
 Train an algorithim to predict whether an image contains signs of diabetic retinopathy or not.
 
-### An executive summary or overview of the project and project goals (5 points).
+### An executive summary or overview of the project and project goals.
 
 This project focuses on developing and evaluating supervised machine learning algorithms for the automatic detection of diabetic retinopathy (DR) in retinal images. The goal is to train binary classification models that can accurately predict whether an image shows signs of DR or not.
 
@@ -104,12 +104,6 @@ Main Starter File which calls the other file Model Utilities
 ---
 
 ### The approach that your group took in achieving the project goals.
-
-- Collaborative planning and role assignment
-- Research and methodological selection
-- Iterative development and regular reviews
-- Data driven decision making
-- Evaluation and Interpretation
 
 1. *Collaborative planning* and *role assignment*
 2. *Research* and *methodological selection*
